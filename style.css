@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: snow;
+}
+section.training_schedule {
+  background-color: #75b0b2;
+  h1 {
+    font-size: 40px;
+    color: snow;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .schedule {
+    display: grid;
+    padding-bottom: 30px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1px;
+    justify-content: center;
+
+    p {
+      border: 2px solid cadetblue;
+      background-color: snow;
+      color: #344344;
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      font-size: large;
+    }
+
+    p.sport {
+      background-color: blanchedalmond;
+    }
+
+    p.current_participants{
+      color: crimson;
+    }
+
+    button {
+      border: 1px solid #344344;
+      border-radius: 50px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: snow;
+      width: 75%;
+      margin:0 auto;
+    }
+
+    button.clicked{
+      outline: 2px solid yellow;
+    }
+
+    button.enroll {
+      background-color: darkslategrey;
+    }
+
+    button.enroll.inactive{
+      opacity:0.5;
+    }
+
+
+    button.disenroll {
+      background-color: crimson;
+      opacity: 0.5;
+    }
+
+    button.disenroll.active{
+      opacity: 1;
+    }
+
+    
+  }
+}
+
